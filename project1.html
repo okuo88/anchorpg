@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Helvetica;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 20%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 22px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 14px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 20%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.8;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 40</div>
+        <img src="./images/4947/IMG_6586.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 40</div>
+        <img src="./images/4947/IMG_6587.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 40</div>
+        <img src="./images/4947/IMG_6588.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 40</div>
+        <img src="./images/4947/IMG_6589.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 40</div>
+        <img src="./images/4947/IMG_6590.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 40</div>
+        <img src="./images/4947/IMG_6584.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 40</div>
+        <img src="./images/4947/IMG_6566.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 40</div>
+        <img src="./images/4947/IMG_6567.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 40</div>
+        <img src="./images/4947/IMG_6573.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">10 / 40</div>
+        <img src="./images/4947/IMG_6574.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">11 / 40</div>
+        <img src="./images/4947/IMG_6579.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">12 / 40</div>
+        <img src="./images/4947/IMG_6597.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">13 / 40</div>
+        <img src="./images/4947/IMG_6598.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">14 / 40</div>
+        <img src="./images/4947/IMG_6806.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">15 / 40</div>
+        <img src="./images/4947/IMG_6807.JPG" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">16 / 40</div>
+        <img src="./images/4947/ML81597873_1_1.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">17 / 40</div>
+        <img src="./images/4947/ML81597873_1.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">18 / 40</div>
+        <img src="./images/4947/ML81597873_3_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">19 / 40</div>
+        <img src="./images/4947/ML81597873_4_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">20 / 40</div>
+        <img src="./images/4947/ML81597873_5_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">21 / 40</div>
+        <img src="./images/4947/ML81597873_6_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">22 / 40</div>
+        <img src="./images/4947/ML81597873_7_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">23 / 40</div>
+        <img src="./images/4947/ML81597873_8_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">24 / 40</div>
+        <img src="./images/4947/ML81597873_9_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">25 / 40</div>
+        <img src="./images/4947/ML81597873_10_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">26 / 40</div>
+        <img src="./images/4947/ML81597873_11_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">27 / 40</div>
+        <img src="./images/4947/ML81597873_12_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">28 / 40</div>
+        <img src="./images/4947/ML81597873_13_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">29 / 40</div>
+        <img src="./images/4947/ML81597873_14_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">30 / 40</div>
+        <img src="./images/4947/ML81597873_15_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">31 / 40</div>
+        <img src="./images/4947/ML81597873_16_1.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">32 / 40</div>
+        <img src="./images/4947/ML81597873_8_17.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">33 / 40</div>
+        <img src="./images/4947/ML81597873_8_18.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">34 / 40</div>
+        <img src="./images/4947/ML81597873_8_19.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">35 / 40</div>
+        <img src="./images/4947/ML81597873_8_20.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">36 / 40</div>
+        <img src="./images/4947/ML81597873_8_21.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">37 / 40</div>
+        <img src="./images/4947/ML81597873_8_22.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">38 / 40</div>
+        <img src="./images/4947/ML81597873_8_23.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">39 / 40</div>
+        <img src="./images/4947/ML81597873_8_24.jpg" style="width:100%" />
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">40 / 40</div>
+        <img src="./images/4947/ML81597873_8_25.jpg" style="width:100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6586.JPG"
+            style="width:100%"
+            onclick="currentSlide(1)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6587.JPG"
+            style="width:100%"
+            onclick="currentSlide(2)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6588.JPG"
+            style="width:100%"
+            onclick="currentSlide(3)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6589.JPG"
+            style="width:100%"
+            onclick="currentSlide(4)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6590.JPG"
+            style="width:100%"
+            onclick="currentSlide(5)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6584.JPG"
+            style="width:100%"
+            onclick="currentSlide(6)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6566.JPG"
+            style="width:100%"
+            onclick="currentSlide(7)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6567.JPG"
+            style="width:100%"
+            onclick="currentSlide(8)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6573.JPG"
+            style="width:100%"
+            onclick="currentSlide(9)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6574.JPG"
+            style="width:100%"
+            onclick="currentSlide(10)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6579.JPG"
+            style="width:100%"
+            onclick="currentSlide(11)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6597.JPG"
+            style="width:100%"
+            onclick="currentSlide(12)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6598.JPG"
+            style="width:100%"
+            onclick="currentSlide(13)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6806.JPG"
+            style="width:100%"
+            onclick="currentSlide(14)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/IMG_6807.JPG"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_1_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(16)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(17)"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_3_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(18)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_4_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(19)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_5_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(20)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_6_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(21)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_7_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(22)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_8_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(23)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_9_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(24)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_10_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(25)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_11_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(26)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_12_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(27)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_13_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(28)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_14_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(29)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_15_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(30)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_16_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(31)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_17_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(32)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_18_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(33)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_19_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(34)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_20_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(35)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_21_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(36)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_22_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(37)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_23_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(38)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_24_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(39)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/4947/ML81597873_25_1.jpg"
+            style="width:100%"
+            onclick="currentSlide(40)"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
