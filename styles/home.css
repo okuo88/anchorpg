@@ -210,8 +210,8 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(135deg, #4b81ff 0%, #38dcf7 100%);
-  background: linear-gradient(45deg, #3385ff, #1c8bf7, #33ccff);
+  background-image: linear-gradient(135deg, #26ffbd 0%, #38dcf7 100%);
+  background: linear-gradient(45deg, #26ffbd, #1c8bf7, #33ccff);
   background-size: 400% 400%;
   position: relative;
   overflow: hidden;
@@ -343,7 +343,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 24px;
   color: black;
   text-align: center;
   margin-top: 150px;
@@ -487,7 +487,7 @@ h4 {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 65px;
     padding-bottom: 40px;
   }
@@ -609,7 +609,7 @@ h4 {
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 60px;
     padding-bottom: 40px;
   }
@@ -694,7 +694,7 @@ h4 {
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 80px;
   }
 
@@ -776,7 +776,7 @@ h4 {
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h4 {
@@ -824,7 +824,7 @@ h4 {
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   h4 {
