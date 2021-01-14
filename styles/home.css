@@ -336,10 +336,11 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 0px;
   padding-bottom: 40px;
-  font-weight: lighter;
+  font-weight: normal;
+  font-family: avenir next, avenir, sans-serif;
 }
 
 h3 {
