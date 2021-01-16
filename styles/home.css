@@ -271,7 +271,7 @@ body {
   color: white;
   float: left;
   margin-left: 0vw;
-  margin-top: 10vw;
+  margin-top: 15vw;
   margin-bottom: 0.5vw;
 }
 
@@ -285,7 +285,7 @@ body {
 }
 
 .topbutton {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "San Francisco Display", sans-serif;
   letter-spacing: 2px;
   background-color: #222e2e;
   border: none;
@@ -311,7 +311,7 @@ body {
   background: white;
   background-size: 400% 400%;
   padding-top: 50px;
-  margin: 0 auto;
+  margin: 8%;
   text-align: center;
 }
 
@@ -321,6 +321,7 @@ body {
 }
 
 p {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   cursor: default;
   top: 0;
@@ -442,10 +443,6 @@ h4 {
     display: block;
   }
 
-  .HELLO span {
-    font-size: 12vw;
-  }
-
   .content {
     padding: 18% 8% 0% 8%;
   }
@@ -535,6 +532,7 @@ h4 {
 
   .topbutton {
     margin-top: 40px;
+    font-family: "San Francisco Display", sans-serif;
   }
 
   .overlay nav {
@@ -647,10 +645,6 @@ h4 {
     font-size: 55px;
     font-weight: 600;
     display: block;
-  }
-
-  .HELLO span {
-    font-size: 12.5vw;
   }
 
   .content {
