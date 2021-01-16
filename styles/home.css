@@ -116,7 +116,7 @@ a:hover {
 /* burger drop */
 .overlay {
   position: fixed;
-  background: #15ff49;
+  background: #222e2e;
   top: 0;
   left: 0;
   width: 100%;
@@ -176,6 +176,7 @@ a:hover {
   color: #fff;
   text-decoration: none;
   overflow: hidden;
+  font-size: 80%;
 }
 .overlay ul li a:hover:after,
 .overlay ul li a:focus:after,
