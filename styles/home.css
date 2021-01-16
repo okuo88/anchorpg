@@ -531,7 +531,7 @@ h4 {
   }
 
   .projectList {
-    padding-top: 4%;
+    padding-top: 5%;
   }
 
   .topbutton {
@@ -560,6 +560,7 @@ h4 {
   .content p {
     font-size: 36px;
     padding-top: 1%;
+    padding-left: 1%;
   }
 
   .intro__link {
